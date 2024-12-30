@@ -15,7 +15,7 @@
     <AssemblyOriginatorKeyFile>HtmlSanitizer.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
     <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign>
-    <PackageId>HtmlSanitizer</PackageId>
+    <PackageId>HtmlSanitizer-Digi</PackageId>
     <PackageTags>xss;anti;antixss;html;security</PackageTags>
     <PackageProjectUrl>https://github.com/mganss/HtmlSanitizer</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
@@ -32,6 +32,9 @@
     <LangVersion>preview</LangVersion>
     <Nullable>enable</Nullable>
     <WarningsAsErrors>nullable</WarningsAsErrors>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.0</Version>
+    <Title>Digi Custom Version</Title>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(CI)' == 'True'">
@@ -39,7 +42,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AngleSharp" Version="[0.17.1]" />
+    <PackageReference Include="AngleSharp" Version="1.1.2" />
     <PackageReference Include="AngleSharp.Css" Version="[0.17.0]" />
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
     <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
